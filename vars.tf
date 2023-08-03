@@ -1,28 +1,28 @@
-variable AWS_REGION {
+variable "AWS_REGION" {
   default = "us-east-1"
 }
 
-variable AMIS {
-  type = map
+variable "AMIS" {
+  type = map(any)
   default = {
     us-east-1 = "ami-0261755bbcb8c4a84"
     us-east-2 = "ami-0261755bbcb8c4a85"
   }
 }
 
-variable PRIV_KEY_PATH {
+variable "PRIV_KEY_PATH" {
   default = "vprofilekey"
 }
 
-variable PUB_KEY_PATH {
+variable "PUB_KEY_PATH" {
   default = "vprofilekey.pub"
 }
 
-variable USERNAME {
+variable "USERNAME" {
   default = "ubuntu"
 }
 
-variable MYIP {
+variable "MYIP" {
   default = "182.70.78.172/32"
 }
 
